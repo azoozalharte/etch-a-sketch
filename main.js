@@ -1,12 +1,24 @@
 const container = document.querySelector('.container')
 const clearButton = document.querySelector('#clear-button')
+const h3 = document.querySelector('h3')
+const h2 = document.querySelector('h2')
 
+let size = parseInt(prompt('What size of grid to you want'));
 
-let rows = 16
-let columns = 16
+if (size >= 50) {
+    h3.innerHTML = `Warings the maximum size is 49X49 you wrote  ${size}`
+    size = 49
+    // Warings the maximum size is 49X49 you type it 50
+}
+
+let rows = size
+let columns = size
 let totalGrids = rows * columns;
+h2.innerHTML = `Size ${size}X${size}`
 
 container.setAttribute('style', `grid-template-columns: repeat(${columns}, auto); grid-template-rows: repeat(${rows}, auto);`)
+
+
 
 
 function createGridDivs(totalGrids1) {

@@ -11,6 +11,10 @@ h2 {
 
 }
 
+h3 {
+    color: red
+}
+
 .container {
     display: grid;
     width: 500px;
