@@ -1,14 +1,32 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top:0;
-    background-color:#541212
+    background-color:#CCD1E4
+}
+h2 {
+    font-size: 50px;
+    color: White;
+
 }
 
 .container {
     display: grid;
     width: 500px;
     height: 500px;
-    margin-top: 100px;
-    background-color: #EEEEEE
+    background-color: #EEEEEE;
+    border: 20px solid #FED1EF;
+    border-radius: 20px;
+}
+
+#clear-button {
+    font-weight: bold;
+    font-size: 15px;
+    color: #1C6DD0;
+    margin-top:20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #A3E4DB
 }
