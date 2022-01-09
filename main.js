@@ -3,7 +3,7 @@ const clearButton = document.querySelector('#clear-button')
 const h3 = document.querySelector('h3')
 const h2 = document.querySelector('h2')
 
-let size = parseInt(prompt('What size of grid to you want'));
+let size = parseInt(prompt('What size of grid do you want'));
 
 if (size >= 50) {
     h3.innerHTML = `Warings the maximum size is 49X49 you wrote  ${size}`
